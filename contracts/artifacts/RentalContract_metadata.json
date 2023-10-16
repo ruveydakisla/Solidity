@@ -1,0 +1,303 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "propertyAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "rentStartDate",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "rentEndDate",
+						"type": "uint256"
+					}
+				],
+				"name": "LeaseCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "propertyAddress",
+						"type": "address"
+					}
+				],
+				"name": "LeaseTerminated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "propertyAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "NewPropertyAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "NewTenantAdded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "addressInfo",
+						"type": "string"
+					}
+				],
+				"name": "addProperty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "addressInfo",
+						"type": "string"
+					}
+				],
+				"name": "addTenant",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "propertyAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rentStartDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rentEndDate",
+						"type": "uint256"
+					}
+				],
+				"name": "createLease",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "leases",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "propertyAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rentStartDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rentEndDate",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "properties",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "ownerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "addressInfo",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "tenants",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "addressInfo",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "leaseIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "terminateLease",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Task2Contract.sol": "RentalContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Task2Contract.sol": {
+			"keccak256": "0x5b6d5ae32ff7dc965cbba08ddfa7a86e00a481e3f69a3a255a1466518526e357",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f02a072e1af4aa115e4d437827b7c6255a71e04ad199ef0980d9e8ac694ea49b",
+				"dweb:/ipfs/QmWFemz2xx5hWznBBWhd86RbCD6nJpVP9SBA5Q1r2ndZjM"
+			]
+		}
+	},
+	"version": 1
+}

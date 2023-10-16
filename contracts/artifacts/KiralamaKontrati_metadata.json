@@ -1,0 +1,303 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "kiraciAdres",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "mulkAdres",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "kiraBaslangicTarihi",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "kiraBitisTarihi",
+						"type": "uint256"
+					}
+				],
+				"name": "KiralamaOlusturuldu",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "kiraciAdres",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "mulkAdres",
+						"type": "address"
+					}
+				],
+				"name": "KiralamaSonlandirildi",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "kiraciAdres",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ad",
+						"type": "string"
+					}
+				],
+				"name": "YeniKiraciEklendi",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "mulkAdres",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ad",
+						"type": "string"
+					}
+				],
+				"name": "YeniMulkEklendi",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "ad",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "adresBilgisi",
+						"type": "string"
+					}
+				],
+				"name": "KiraciEkle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "kiraciAdres",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "mulkAdres",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "kiralamaBaslangicTarihi",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "kiralamaBitisTarihi",
+						"type": "uint256"
+					}
+				],
+				"name": "KiralamaOlustur",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "kiraIndeks",
+						"type": "uint256"
+					}
+				],
+				"name": "KiralamaSonlandir",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "ad",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "adresBilgisi",
+						"type": "string"
+					}
+				],
+				"name": "MulkEkle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "kiracilar",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "kiraciAdres",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "ad",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "adresBilgisi",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "kiralamalar",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "kiraciAdres",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "mulkAdres",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "kiraBaslangicTarihi",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "kiraBitisTArihi",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "mulkler",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "sahipAdres",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "ad",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "adresBilgisi",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Task2Contract.sol": "KiralamaKontrati"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Task2Contract.sol": {
+			"keccak256": "0x2d44a55b4be336f42a700af58a323990fe555c9eac1af902f9929cd5807720a6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0da95f9f5dab1b0be7a6337b784cb4d2918fc5651290001d9848e41ce53b083b",
+				"dweb:/ipfs/QmSj1sLymnmmFnTERyip67eCTiorskccKyetiq5b8DsyU2"
+			]
+		}
+	},
+	"version": 1
+}

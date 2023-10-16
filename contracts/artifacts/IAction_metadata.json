@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "IAmReady",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SimpleContract.sol": "IAction"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SimpleContract.sol": {
+			"keccak256": "0xe3210ab7eeb53ff7b919d478eb8a2d252a0b1b687a656dc78f56c1957b5d75e4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://86fc322f933b11d834a6551c064cee42edccfd5538c55919c157c50baabb9477",
+				"dweb:/ipfs/QmYbZMnKXipNVUag3jJkziX2rEK3L1mopwQ93sus7hfExS"
+			]
+		}
+	},
+	"version": 1
+}

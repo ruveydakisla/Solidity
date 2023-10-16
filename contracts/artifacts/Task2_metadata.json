@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "tip",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "bosmu",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Task2.Gayrimenkul",
+						"name": "_gayrimenkul",
+						"type": "tuple"
+					}
+				],
+				"name": "gayrimenkulGir",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "gayrimenkuller",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "tip",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "bosmu",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Task2Contract.sol": "Task2"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Task2Contract.sol": {
+			"keccak256": "0x19dbcfba13dacb9a73f488811a0acabe9a59556dd1de29f40507454af1f5613b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7578611d6bd94bd3e8702710eccca8f890821f3885bef8c79a8d5de8896276c4",
+				"dweb:/ipfs/QmSMZWqvpSzz1G3Uk2nLH4ViDSQVHozzVZRmfXV2uv5nam"
+			]
+		}
+	},
+	"version": 1
+}
